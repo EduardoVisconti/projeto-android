@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('/fontes/IDroid.otf') format('opentype');
+    src: url('/projeto-android/fontes/IDroid.otf') format('opentype');
     font-weight: normal;
 }
 :root {
@@ -77,8 +77,8 @@ a:hover {
 
 main {
     margin: auto;
-    min-width: 800px;
-    max-width: 800px;
+    min-width: auto;
+    max-width: 600px;
     background-color: white;
     box-shadow: inset 0px 0px 4px black;
 }
@@ -120,6 +120,7 @@ strong {
 img {
     margin: auto;
     display: block;
+    max-width: 600px;
 }
 
 iframe {
