@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('/fontes/IDroid.otf') format('opentype');
+    src: url('../fontes/IDroid.otf') format('opentype');
     font-weight: normal;
 }
 :root {
@@ -50,6 +50,8 @@ header > h1 {
 header > p {
     color: white;
     font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /* MENU */
@@ -67,18 +69,19 @@ nav a {
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     color: var(--cor5);
     background-color: var(--cor3);
     border-radius: 3px;
+    
 }
 
 /* CONTEÚDO */
 
 main {
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
-    min-width: auto;
-    max-width: 600px;
     background-color: white;
     box-shadow: inset 0px 0px 4px black;
 }
@@ -93,7 +96,7 @@ main h2 {
 main h3 {
     margin: 10px 20px;
     padding: 0px 5px;
-    background-image: linear-gradient(to right, var(--cor1), white);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
     font-family: var(--fonte-android);
     font-weight: normal;
     color: var(--cor4);
@@ -113,15 +116,21 @@ main a {
     padding: 3px;
 }
 
-strong {
+main strong {
     color: var(--cor4);
+    background-color: var(--cor1);
 }
 
-img {
-    margin: auto;
-    display: block;
-    max-width: 600px;
+main img {
+    width: 100%;
 }
+
+main img.bugdroid {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
 
 iframe {
     background-color: var(--cor5);
